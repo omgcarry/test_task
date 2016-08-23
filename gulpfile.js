@@ -96,7 +96,8 @@ gulp.task('build', ['removedist', 'buildhtml', 'imagemin', 'sass', 'libs'], func
 		]).pipe(gulp.dest('dist/css'));
 
 	var buildFiles = gulp.src([
-		'src/.htaccess'
+		'src/.htaccess',
+		'src/header.min.css'
 	]).pipe(gulp.dest('dist'));
 
 	var buildFonts = gulp.src('src/fonts/**/*').pipe(gulp.dest('dist/fonts'));
