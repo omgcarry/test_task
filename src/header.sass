@@ -1,5 +1,123 @@
 @import "bourbon"
 @import "sass/vars"
 @import "sass/base"
-
 //First screen styles
+h1,h2,h3,h4,h5,h6,p,a,input,span,div,table,tr,td,th
+	font-family: 'robotoLight'
+*
+	box-sizing: border-box
+.resize
+	position: relative
+	max-width: 768px
+	width: 100%
+	margin: 0 auto
+	z-index: 10
+	box-sizing: border-box
+.wpcf7-validation-errors,
+.ajax-loader,
+.wpcf7-not-valid-tip,
+div.wpcf7-mail-sent-ok
+	display: none!important
+.cf
+	zoom: 1
+	&:after
+		clear: both
+	&:after,
+	&:before
+		content: ''
+		display: table
+.globalWrapper
+	position: relative
+	overflow: hidden
+	margin: 0 auto
+	max-width: 1920px
+	min-width: 320px
+img
+	max-width: 100%
+.dt
+	display: table
+	width: 100%
+	height: 100%
+.dtc
+	display: table-cell
+	height: 100%
+	vertical-align: middle
+	text-align: center
+.fll
+	float: left
+.flr
+	float: right
+.mob
+	display: none
+header
+	position: relative
+	padding: 22px 0 29px
+	background: #fff
+	.menu
+		font-size: 0
+		text-align: center
+		li
+			display: inline-block
+			vertical-align: middle
+			a
+				display: block
+				font-size: 14px
+				color: #435993
+				line-height: 1.2
+				text-decoration: none
+				padding: 0 37px
+				transition: all .3s ease
+				&:hover
+					color: #1c1c1c
+main
+	background: url("img/background_image.png") center top no-repeat
+	background-size: 100% auto
+	padding-bottom: 70px
+.mainTitle
+	font-size: 70px
+	color: #000000
+	line-height: 1.2
+	font-family: 'robotoThin'
+	text-align: center
+	padding-top: 110px
+.svg
+	display: block
+	margin: 0 auto
+#bio
+	margin-top: 62px
+#experience
+	margin-top: 77px
+#js
+	margin-top: 130px
+#about
+	margin: 102px auto 3px
+.heading
+	font-size: 30px
+	color: #1c1c1c
+	line-height: 1.3
+	text-align: center
+	padding-top: 20px
+	&:nth-of-type(1)
+		margin-bottom: 47px
+.subheading
+	font-size: 16px
+	color: #1c1c1c
+	line-height: 1.5
+	width: 500px
+	max-width: 100%
+	margin: 9px auto 0
+	text-align: center
+.textField
+	display: block
+	width: 520px
+	max-width: 100%
+	height: 58px
+	line-height: 1.2
+	border-radius: 5px
+	border: 1px solid #f6f6f6
+	margin: 27px auto 0
+	text-align: center
+	font-size: 24px
+	font-family: 'roboto'
+	outline: none
+	color: #000!important

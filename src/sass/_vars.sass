@@ -1,4 +1,54 @@
 @import "bourbon"
 
-$default-font: "roboto", sans-serif
-$accent: orange
+$default-font: 'Oswald', sans-serif
+$golden: #ffc2a4
+@mixin transition
+	-webkit-transition: all 0.4s ease
+	-moz-transition: all 0.4s ease
+	-ms-transition: all 0.4s ease
+	-o-transition: all 0.4s ease
+	transition: all 0.4s ease
+@mixin burger($background,$top,$right,$width,$lineHeight)
+	position: absolute
+	right: $right
+	display: block
+	width: $width
+	height: $lineHeight
+	padding-top: $lineHeight * 3
+	padding-bottom: $lineHeight * 3
+	top: $top
+	box-sizing: content-box
+	@include transition
+	span
+		display: block
+		width: 100%
+		height: $lineHeight
+		background: $background
+		@include transition
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: $lineHeight
+		background: $background
+		left: 0
+		top: 0
+		@include transition
+	&:after
+		position: absolute
+		content: ''
+		width: 100%
+		height: $lineHeight
+		background: $background
+		left: 0
+		bottom: 0
+		@include transition
+	&.active
+		span
+			opacity: 0
+		&:before
+			transform: rotate(45deg)
+			top: $lineHeight * 3
+		&:after
+			transform: rotate(-45deg)
+			bottom: $lineHeight * 3

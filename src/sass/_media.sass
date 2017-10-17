@@ -2,31 +2,64 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1170px)
 	/**/
-
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 980px)
 	/**/
-
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
-
-
+	.mob
+		display: block
+	header
+		position: fixed
+		width: 100%
+		z-index: 100
+		box-shadow: 0 5px 4px 2px rgba(0,0,0,0.2)
+		.burger
+			@include burger(#435993,0,15px,20px,2px)
+		.menu
+			display: none
+			position: absolute
+			background: #fff
+			top: 29px
+			width: 100%
+			left: 0
+			padding: 10px 0
+			li
+				display: block
+				padding: 10px 0
+				text-align: center
+				a
+					display: inline-block
+	main
+		margin-top: 29px
+	.resize
+		padding: 0 10px
+	.checkField
+		min-width: 200px
+	.svg
+		max-width: 100%
+	.successLine
+		.name
+			display: none
+		.from
+			float: left
+		.till
+			float: right
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
+@media only screen and (max-width: 720px)
 	/**/
-
-
+@media only screen and (max-width : 479px)
+	/**/
+	
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
 
 /*==========  Mobile First  ==========*/
 
@@ -36,14 +69,12 @@
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
+@media only screen and (min-width : 480px) and (max-width : 768px)
 	/**/
-
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	/**/
-
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)

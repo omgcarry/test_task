@@ -51,8 +51,9 @@ gulp.task('headersass', function() {
 
 gulp.task('libs', function() {
 	return gulp.src([
-		'src/libs/jquery/dist/jquery.min.js',
-		// 'src/libs/magnific-popup/magnific-popup.min.js'
+		'src/libs/js/jquery.min.js',
+		'src/libs/js/inline_svg.js',
+		'src/libs/js/jquery-ui.min.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
